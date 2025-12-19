@@ -26,7 +26,7 @@ class Node:
         if self.value == '/':
             if b == 0:
                 raise ExpressionError("Деление на ноль")
-            return a // b
+            return a / b
         if self.value == '^':
             return a ** b
 
