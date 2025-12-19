@@ -51,7 +51,7 @@ class Parser:
 
         if part == '-':
             self.get_part('-')
-            return Node('u-', self.parse_first())
+            return Node('u-', self.parse_second())
 
         if type(part) == int:
             self.get_part()
