@@ -6,8 +6,8 @@ expression = 0
 while True:
     expression = input("Введите выражение для решения или 0 для выхода: ")
     if expression == "0": break
-    tokens = read(expression)
-    parser = Parser(tokens)
+    expression_parts = read(expression)
+    parser = Parser(expression_parts)
     tree = parser.parse()
 
     print("Дерево выражения:")
